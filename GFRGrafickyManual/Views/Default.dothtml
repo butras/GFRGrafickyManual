@@ -1,0 +1,77 @@
+﻿@viewModel GFRGrafickyManual.ViewModels.DefaultViewModel, GFRGrafickyManual
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <h1>5.1 Textové pole</h1>
+    <div>Textové pole je vstup, který umožňuje uživateli psát nebo upravovat text.</div>
+    <br />
+    <form>
+        <div class="form-group">
+            <label for="standartnitextbox">Standartní textbox</label>
+            <input type="text" class="form-control" id="standartnitextbox">
+        </div>
+        <div class="form-group">
+            <label for="focustextbox">Focus textbox</label>
+            <input type="text" class="form-control focus" id="focustextbox">
+        </div>
+        <div class="form-group">
+            <label for="disabledtextbox">Disabled textbox</label>
+            <input type="text" class="form-control" id="disabledtextbox" disabled>
+        </div>
+    </form>
+    <br />
+    <h2>Použití</h2>
+    <div>Pomocí textových polí ve formulářích nebo v obsahu můžete lidem usnadnit zadávání, výběr a hledání textu. Textová pole se obvykle nacházejí ve formuláři, ale mohou být také součástí modálních oken, vyhledávání nebo jiné části webu.</div>
+    <br />
+    <div>Mezi běžné typy zadávání textových polí patří:</div>
+    <ul>
+        <li>uživatelská jména,</li>
+        <li>adresy a odkazy URL,</li>
+        <li>e-mailové adresy,</li>
+        <li>vyhledávání v prostém textu.</li>
+    </ul>
+    <br />
+    <h2>Velikost:</h2>
+    <div>Nastavení velikosti se provádí pomocí CSS příkazu <code>.form-control-lg</code> a <code>.form-control-sm</code>.</div>
+    <input class="form-control form-control-lg" type="text" placeholder="Velká velikost">
+    <br />
+    <input class="form-control" type="text" placeholder="Standartní velikost">
+    <br />
+    <input class="form-control form-control-sm" type="text" placeholder="Malá velikost">
+    <br />
+    <h2>Nápověda u textového pole</h2>
+    <div class="form-group">
+        <label for="inputPassword">Heslo:</label>
+        <input type="password" id="inputPassword" class="form-control">
+        <small class="form-text text-muted">
+            Heslo musí mít 8-20 znaků, obsahovat písmena a číslice a nesmí obsahovat mezery, speciální znaky ani emoji.
+        </small>
+    </div>
+    <br />
+    <h2>Validace a chyby:</h2>
+    <div>Platná pole můžou být označená CSS příkazem <code>.is-valid</code> a neplatná pole můžou být označená CSS příkazem <code>.is-invalid</code>.</div>
+    <div class="form-group">
+        <label for="validtextbox">Validní textbox</label>
+        <input type="text" class="form-control is-valid" id="validtextbox">
+    </div>
+    <div class="form-group">
+        <label for="invalidtextbox">Nevalidní textbox</label>
+        <input type="text" class="form-control is-invalid" id="invalidtextbox">
+    </div>
+    <div>Pro validaci nápovědy u textového pole je možné použít CSS příkaz <code>.valid-feedback</code> pro validní nápovědu nebo <code>.invalid-feedback</code> pro nevalidní nápovědu.</div>
+    <div class="form-group">
+        <label for="validtextbox">Validní textbox včetně nápovědy</label>
+        <input type="text" class="form-control is-valid" id="validtextbox">
+        <small class="valid-feedback">
+            Zadaná hodnota je platná.
+        </small>
+    </div>
+    <div class="form-group">
+        <label for="invalidtextbox">Nevalidní textbox včetně nápovědy</label>
+        <input type="text" class="form-control is-invalid" id="invalidtextbox">
+        <small class="invalid-feedback">
+            Zadaná hodnota je neplatná.
+        </small>
+    </div>
+    <br />
+</dot:Content>
