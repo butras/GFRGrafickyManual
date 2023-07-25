@@ -1,0 +1,53 @@
+﻿@viewModel GFRGrafickyManual.ViewModels.ComboBoxViewModel, GFRGrafickyManual
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <h1>5.4 Rozbalovací seznam (ComboBox)</h1>
+    <div>Rozbalovací seznam představuje seznam možností, ze kterých může uživatel vybrat jednu nebo několik možností. </div>
+    <br />
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">Rozbalovací seznam</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">Rozbalovací seznam (Disabled)</label>
+        <select class="form-control" id="exampleFormControlSelect1" disabled>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </div>
+    <br />
+    <h2>Použití:</h2>
+    <div>Rozbalovací seznam použijte, pokud má uživatel vybrat jednu možnost z delšího seznamu (7 a více možností). Pokud je výběr možností menší, použijte Přepínače nebo Zašktávací pole.</div>
+    <br />
+    <h2>Kde nepoužívat:</h2>
+    <ul>
+        <li>Doporučujeme nepoužívat rozbalovací seznam, pokud máte na výběr ze dvou možností. V takovém případě použijte raději skupinu přepínačů.</li>
+        <li>Nevkládejte rozbalovací seznamy ani je nepoužívejte k zobrazování příliš složitých informací.</li>
+        <li>Udržujte výběry možností co nejpřímější.</li>
+    </ul>
+    <br />
+    <h2>Velikost:</h2>
+    <div>Nastavení velikosti se provádí pomocí CSS příkazu <code>.form-control-lg</code> a <code>.form-control-sm.</code></div>
+    <select class="form-control form-control-lg">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+
+    <select class="form-control form-control-sm">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+</dot:Content>
+

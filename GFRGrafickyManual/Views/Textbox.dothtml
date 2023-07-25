@@ -1,4 +1,4 @@
-﻿@viewModel GFRGrafickyManual.ViewModels.DefaultViewModel, GFRGrafickyManual
+﻿@viewModel GFRGrafickyManual.ViewModels.TextboxViewModel, GFRGrafickyManual
 @masterPage Views/MasterPage.dotmaster
 
 <dot:Content ContentPlaceHolderID="MainContent">
@@ -73,5 +73,5 @@
             Zadaná hodnota je neplatná.
         </small>
     </div>
-    <br />
+    <br />    
 </dot:Content>

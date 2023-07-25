@@ -1,0 +1,103 @@
+﻿@viewModel GFRGrafickyManual.ViewModels.RadioButtonViewModel, GFRGrafickyManual
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <h1>5.3 Přepínací a zaškrtávací tlačítka</h1>
+    <h2>Přepínací tlačítka (RadioButton)</h2>
+    <div>Přepínací tlačítka zobrazují skupinu vzájemně se vylučujících možností a ze skupiny je povolen vždy pouze jeden výběr.</div>
+    <br />
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+        <label class="form-check-label" for="exampleRadios1">
+            Hodnota 1
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+        <label class="form-check-label" for="exampleRadios2">
+            Hodnota 2
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+        <label class="form-check-label" for="exampleRadios3">
+            Hodnota 3 (Disabled)
+        </label>
+    </div>
+    <br />
+    <div>Využijte ve chvíli, kdy chcete uživateli umožnit vybrat pouze jednu vzájemně se vylučující možnost z více možností. Je obdobou rozbalovacího seznamu s tím rozdílem, že uživatel vidí všechny nabízené možnosti.</div>
+    <br />
+    <h2>Zaškrtávací tlačítka (CheckBox)</h2>
+    <div>Zaškrtávací políčka se používají, když je v seznamu více položek k výběru. Uživatelé si mohou vybrat žádnou, jednu nebo libovolný počet položek.</div>
+    <br />
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label" for="defaultCheck1">
+            Hodnota 1
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+        <label class="form-check-label" for="defaultCheck3">
+            Hodnota 2
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+        <label class="form-check-label" for="defaultCheck2">
+            Hodnota 3 (disabled)
+        </label>
+    </div>
+    <br />
+    <div>Zaškrtávací políčka se používají pro více možností, nikoli pro vzájemně se vylučující možnosti. Každé zaškrtávací políčko funguje nezávisle na ostatních zaškrtávacích polích v seznamu, proto zaškrtnutí dalšího políčka neovlivní žádné další výběry.</div>
+    <br />
+    <h2>Přepínač typu Switch (Toggle)</h2>
+    <div>Přepínač typu Switch slouží k rychlému přepínání mezi dvěma možnými stavy. Obvykle se používají pro stavy „zapnuto / vypnuto“.</div>
+    <br />
+    <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+        <label class="custom-control-label" for="customSwitch1">Přepínač 1</label>
+    </div>
+    <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
+        <label class="custom-control-label" for="customSwitch2">Přepínač 2 (Disabled)</label>
+    </div>
+    <br />
+    <div>Přepínač typu Switch je ovládací prvek, který slouží k rychlému přepínání mezi dvěma možnými stavy. Proto se používají pouze pro tyto binární akce, ke kterým dojde okamžitě poté, co uživatel „přepne" přepínač. Obvykle se používají pro spínače „zapnuto / vypnuto“.</div>
+    <br />
+    <h2>V řádku (Inline)</h2>
+    <div>Seskupení do vodrovného řádku je možné přidáním CSS třídy <code>.form-check-inline</code>.</div>
+    <br />
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+        <label class="form-check-label" for="inlineRadio1">Hodnota 1</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+        <label class="form-check-label" for="inlineRadio2">Hodnota 2</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+        <label class="form-check-label" for="inlineRadio3">Hodnota 3 (disabled)</label>
+    </div>
+    <br />
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+        <label class="form-check-label" for="defaultCheck5">
+            Hodnota 1
+        </label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+        <label class="form-check-label" for="defaultCheck6">
+            Hodnota 2
+        </label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck7" disabled>
+        <label class="form-check-label" for="defaultCheck7">
+            Hodnota 3 (disabled)
+        </label>
+    </div>
+</dot:Content>
+

@@ -3,6 +3,9 @@
 
 :root {
     /* Variables */
+    --fscolor: #ac0c42;
+    --fsfocuscolor: #860933;
+    --fshovercolor: #D20F50;
     --bordercolor: #d9dee0;
     --focuscolor: #66afe9;
     --validcolor: #28a745;
@@ -12,11 +15,12 @@
 html, body {
 }
 
+/* Textbox */
 .form-group label {
     display: flex;
     font-size: 13px;
-    font-weight: 600;    
-    margin-bottom: 5px;            
+    font-weight: 600;
+    margin-bottom: 5px;
 }
 
 .form-group small {
@@ -24,7 +28,7 @@ html, body {
 }
 
 .form-control {
-    border: 1px solid var(--bordercolor);    
+    border: 1px solid var(--bordercolor);
     height: calc(2rem + 2px);
     border-radius: 0;
 }
@@ -45,7 +49,7 @@ html, body {
 
 .form-control-sm {
     height: calc(1.8125rem + 2px);
-}   
+}
 
 .form-control.is-valid {
     border-color: var(--validcolor);
@@ -54,7 +58,7 @@ html, body {
     .form-control.is-valid:focus, .form-control.is-valid.focus {
         border-color: var(--validcolor);
         -webkit-box-shadow: inset 0 1px 1px rgba(40,167,69,.25), 0 0 8px rgba(40,167,69,.25);
-        box-shadow: inset 0 1px 1px rgba(40,167,69,.25), 0 0 8px rgba(40,167,69,.25);        
+        box-shadow: inset 0 1px 1px rgba(40,167,69,.25), 0 0 8px rgba(40,167,69,.25);
     }
 
 .form-control.is-invalid {
@@ -64,5 +68,260 @@ html, body {
     .form-control.is-invalid:focus, .form-control.is-invalid.focus {
         border-color: var(--invalidcolor);
         -webkit-box-shadow: inset 0 1px 1px rgba(220,53,69,.25), 0 0 8px rgba(220,53,69,.25);
-        box-shadow: inset 0 1px 1px rgba(220,53,69,.25), 0 0 8px rgba(220,53,69,.25);        
+        box-shadow: inset 0 1px 1px rgba(220,53,69,.25), 0 0 8px rgba(220,53,69,.25);
     }
+
+.form-control option:checked,
+.form-control option:hover,
+.form-control option:active {
+    background-color: var(--bordercolor);
+}
+
+/* Button */
+.btn {
+    border-radius: 2px;
+}
+
+.btn-success {
+    color: #fff;
+    background: var(--fscolor);
+    border-color: var(--fscolor);
+}
+
+    .btn-success.disabled,
+    .btn-success:disabled,
+    .btn-success[disabled] {
+        border-color: var(--fscolor);
+        background-color: var(--fscolor);
+        cursor: not-allowed;
+    }
+
+    .btn-success.focus,
+    .btn-success:focus {
+        color: #FEECF2;
+        border-color: var(--fsfocuscolor);
+        background-color: var(--fsfocuscolor);
+        box-shadow: 0 0 0 0.2rem rgba(172, 12, 66,.5);
+    }
+
+    .btn-success.hover,
+    .btn-success:hover {
+        color: #FEECF2;
+        border-color: var(--fshovercolor);
+        background-color: var(--fshovercolor);
+    }
+
+    .btn-success.active,
+    .btn-success:active {
+        color: #fff;
+        border-color: var(--fsfocuscolor) !important;
+        background-color: var(--fsfocuscolor) !important;
+    }
+
+    .btn-success:not(:disabled):not(.disabled).active:focus,
+    .btn-success:not(:disabled):not(.disabled):active:focus,
+    .show > .btn-success.dropdown-toggle:focus {
+        box-shadow: 0 0 0 0.2rem rgba(172, 12, 66,.5);
+    }
+
+.btn-outline-success {
+    color: var(--fscolor);
+    border-color: var(--fscolor);
+}
+
+    .btn-outline-success.disabled,
+    .btn-outline-success:disabled,
+    .btn-outline-success[disabled] {
+        border-color: var(--fscolor);
+        color: var(--fscolor);
+        background-color: #fff;
+        cursor: not-allowed;
+    }
+
+    .btn-outline-success.hover,
+    .btn-outline-success:hover {
+        color: #fff;
+        background-color: var(--fshovercolor);
+        border-color: var(--fshovercolor);
+    }
+
+    .btn-outline-success.focus,
+    .btn-outline-success:focus {
+        color: #FEECF2;
+        border-color: var(--fsfocuscolor);
+        background-color: var(--fsfocuscolor);
+        box-shadow: 0 0 0 0.2rem rgba(172, 12, 66,.5);
+    }
+
+    .btn-outline-success.active,
+    .btn-outline-success:active {
+        color: #fff;
+        border-color: var(--fsfocuscolor) !important;
+        background-color: var(--fsfocuscolor) !important;
+    }
+
+    .btn-outline-success:not(:disabled):not(.disabled).active:focus,
+    .btn-outline-success:not(:disabled):not(.disabled):active:focus,
+    .show > .btn-outline-success.dropdown-toggle:focus {
+        box-shadow: 0 0 0 0.2rem rgba(172, 12, 66,.5);
+    }
+
+/* RadioButton */
+.form-check input[type=radio] {
+    opacity: 0;
+}
+
+    .form-check input[type=radio][disabled] {
+        cursor: not-allowed;
+    }
+
+        .form-check input[type=radio][disabled] + label {
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+    .form-check input[type=radio]:checked + label:before {
+        border-color: var(--fscolor);
+        border-width: 10px;
+    }
+
+    .form-check input[type=radio]:checked + label:after {
+        border-color: #fff;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    .form-check input[type=radio] + label {
+        cursor: pointer;
+        padding-left: 10px;
+        position: relative;
+        vertical-align: middle;
+        font-size: 14px;
+    }
+
+        .form-check input[type=radio] + label:before {
+            background-color: #fff;
+            border: 1px solid #d9dee0;
+            border-radius: 50%;
+            content: "";
+            display: inline-block;
+            height: 20px;
+            left: 0;
+            margin-left: -20px;
+            position: absolute;
+            -webkit-transition: color 0.3s ease-in-out 0s;
+            transition: color 0.3s ease-in-out 0s;
+            width: 20px;
+        }
+
+        .form-check input[type=radio] + label:after {
+            background-color: rgba(0, 0, 0, 0);
+            border: 2px solid #76838f;
+            border-radius: 50%;
+            content: " ";
+            display: inline-block;
+            height: 6px;
+            left: 7px;
+            position: absolute;
+            margin-left: -20px;
+            top: 7px;
+            width: 6px;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+            -webkit-transition: 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+            transition: 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+        }
+
+/* CheckBox */
+.form-check input[type=checkbox] {   
+    opacity: 0;   
+}
+
+    .form-check input[type=checkbox]:disabled {
+        cursor: not-allowed;
+    }
+
+        .form-check input[type=checkbox]:disabled + label {
+            cursor: not-allowed;
+        }
+
+    .form-check input[type=checkbox]:checked + label:before {
+        background-color: var(--fscolor);
+        border-color: var(--fscolor);
+        border-width: 10px;
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    .form-check input[type=checkbox]:checked + label:after {
+        color: #fff;
+        font-family: 'Web Icons';
+        content: "\F192";
+    }
+
+    .form-check input[type=checkbox] + label {
+        vertical-align: middle;
+        position: relative;
+        padding-left: 10px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+        .form-check input[type=checkbox] + label:before {
+            border-radius: 3px;
+            content: "";
+            display: inline-block;
+            position: absolute;
+            height: 20px;
+            left: 0;
+            margin-left: -20px;
+            background-color: #fff;
+            border: 1px solid #d9dee0;
+            -webkit-transition: all 0.3s ease-in-out 0s;
+            transition: all 0.3s ease-in-out 0s;
+            width: 20px;
+        }
+
+        .form-check input[type=checkbox] + label:after {
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            left: 0;
+            top: 0;
+            text-align: center;
+            padding-top: 1px;
+            font-size: 12px;
+            display: inline-block;
+            position: absolute;
+            margin-left: -20px;
+        }
+
+/* Toggle */
+.custom-control-input:focus ~ .custom-control-label::before {
+    border-color: var(--fscolor) !important;    
+    box-shadow: 0 0 0 0.2rem rgba(172, 12, 66, 0.25);
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    border-color: var(--fscolor) !important;
+    background-color: var(--fscolor) !important;
+}
+
+.custom-control-input:active ~ .custom-control-label::before {
+    background-color: var(--fscolor) !important;
+    border-color: var(--fscolor) !important;
+}
+
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+    border-color: var(--fscolor) !important;    
+}
+
+.custom-control-input-green:not(:disabled):active ~ .custom-control-label::before {
+    background-color: var(--fscolor) !important;
+    border-color: var(--fscolor) !important;
+}
+
+.custom-control-label {
+    font-size: 14px;
+    padding-top: 2px;
+}

@@ -21,7 +21,11 @@ namespace GFRGrafickyManual
 
         private void ConfigureRoutes(DotvvmConfiguration config, string applicationPath)
         {
-            config.RouteTable.Add("Default", "", "Views/Default.dothtml");
+            config.RouteTable.Add("Default", "", "Views/Textbox.dothtml");
+            config.RouteTable.Add("Textbox", "Textbox", "Views/Textbox.dothtml");
+            config.RouteTable.Add("Button", "Button", "Views/Button.dothtml");
+            config.RouteTable.Add("RadioButton", "RadioButton", "Views/RadioButton.dothtml");
+            config.RouteTable.Add("ComboBox", "ComboBox", "Views/ComboBox.dothtml");
             config.RouteTable.AutoDiscoverRoutes(new DefaultRouteStrategy(config));    
         }
 

@@ -1,0 +1,94 @@
+﻿@viewModel GFRGrafickyManual.ViewModels.ButtonViewModel, GFRGrafickyManual
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <h1>5.2 Tlačítka</h1>
+    <div>Tlačítka umožňují uživatelům provádět akce pomocí jediného kliknutí. Slouží tedy k inicializaci akce. Text či ikona tlačítka vyjadřují, jaká akce se spustí, když s nimi uživatel interaguje.</div>
+    <br />
+    <div><b>Standartní tlačítka:</b></div>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-default">Default</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-link">Link</button>
+    <br />
+    <div><b>Disabled tlačítka:</b></div>
+    <button type="button" class="btn btn-success" disabled>Disabled</button>
+
+    <div><b>Tlačítka s ikonou:</b></div>
+    <button type="button" class="btn btn-success">
+        <i class="far fa-check-circle"></i>
+        Uložit
+    </button>
+    <button type="button" class="btn btn-default">
+        <i class="fa fa-times"></i>
+        Zrušit
+    </button>
+    <button type="button" class="btn btn-warning">
+        <i class="fa fa-trash-alt"></i>
+        Smazat
+    </button>
+    <button type="button" class="btn btn-info">
+        <i class="fa fa-filter"></i>
+        Filtrovat
+    </button>
+    <br />
+    <br />
+    <h2>Druhy tlačítek:</h2>
+    <div>Každá varianta tlačítka má určitou funkci a svůj význam, které usnadňují uživateli orientaci. Je proto velmi důležité, aby různé varianty tlačítek byly implementovány konzistentně napříč webovou aplikací a představovaly očekávanou akci.</div>
+    <div>Tlačítka se dělí na několik druhů dle důležitosti akce:</div>
+    <ul>
+        <li>
+            <b>Primární</b> - pro spuštění hlavní akce na stránce. Primární tlačítka by se měla na obrazovce zobrazit pouze jednou, například Přidání nového záznamu, Uložení formuláře.
+            <ul>
+                <li>Ze sady tlačítek Bootstrap je možné použít tlačítka: Success (<code>.btn-success</code>), Primary (<code>.btn-primary</code>), Danger (<code>.btn-danger</code>), Warning (<code>.btn-warning</code>)</li>
+            </ul>
+        </li>
+        <li>
+            <b>Sekundární</b> - pro sekundární akce na stránce. Sekundární tlačítka jsou většinou používány ve spojení s primárním tlačítkem. Funkcí sekundárního tlačítka je provádět opozitní akci proti tlačítku primárnímu, například Storno nebo Zpět. Sekundární tlačítko by nemělo být používáno samostatně a nemělo by být použito pro <i>pozitivní akci</i>.
+            <ul>
+                <li>Ze sady tlačítek Boostrap je možné použít tlačítka: Default (<code>.btn-default</code>), Secondary (<code>.btn-secondary</code>), Warning (<code>.btn-warning</code>)</li>
+            </ul>
+        </li>
+        <li>
+            <b>Terciární</b> - pro méně důležité a někdy nezávislé akce. Terciární tlačítka lze použít samostatně nebo použít s primárním tlačítkem, pokud existuje více akcí. Terciární tlačítka lze také použít pro dílčí úkoly na stránce, kde je primární tlačítko určeno pro hlavní akci.
+            <ul>
+                <li>Ze sady tlačítek Boostrap je možné použít tlačítka: Default (<code>.btn-default</code>), Info (<code>.btn-info</code>), Light (<code>.btn-light</code>)</li>
+            </ul>
+        </li>
+    </ul>
+    <h2>Velikost:</h2>
+    <div>Nastavení velikosti se provádí pomocí CSS příkazu <code>.btn-lg</code> a <code>.btn-sm</code>.</div>
+    <button type="button" class="btn btn-sm btn-success">Malé tlačítko</button>
+    <button type="button" class="btn btn-lg btn-success">Velké tlačítko</button>
+    <br />
+    <br />
+    <h2>Obrysová tlačítka:</h2>
+    <div>Nastavení obrysových tlačítek se provádí pomocí CSS příkazu <code>.btn-outline-*</code>.</div>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-success" disabled>Disabled</button>
+    <button type="button" class="btn btn-outline-default">Default</button>
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-light">Light</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+    <button type="button" class="btn btn-outline-link">Link</button>
+    <br />
+    <br />
+    <h2>Skupina tlačítek</h2>
+    <div>Pro vytvoření skupiny tlačítek stačí jen <code>.btn</code> obalit do <code>.btn-group</code>.</div>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-success">Left</button>
+        <button type="button" class="btn btn-success">Middle</button>
+        <button type="button" class="btn btn-success">Right</button>
+    </div>
+</dot:Content>
+
