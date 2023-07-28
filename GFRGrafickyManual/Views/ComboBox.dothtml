@@ -49,5 +49,18 @@
         <option value="2">2</option>
         <option value="3">3</option>
     </select>
+    <br />
+    <h2>Vícenásobný výběr (MultiSelect)</h2>
+    <div>Více násobný výběr umožňuje vybrat z nabídky možností více položek.</div>    
+    <div class="form-group">
+        <label for="exampleFormControlSelect2">Vícenásobný výměr</label>
+        <select multiple class="form-control" id="exampleFormControlSelect2">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </div>
 </dot:Content>
 
