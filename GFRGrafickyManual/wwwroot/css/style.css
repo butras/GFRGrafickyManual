@@ -13,6 +13,8 @@
 }
 
 html, body {
+    background: #f8f9fa;
+    font-family: 'Open Sans';
 }
 
 /* Textbox */
@@ -324,4 +326,75 @@ html, body {
 .custom-control-label {
     font-size: 14px;
     padding-top: 2px;
+}
+
+/* TabControl */
+.nav-tabs {
+    border-bottom: 2px solid var(--bordercolor);
+}
+    .nav-tabs .nav-item {
+        font-size: 13px;
+        padding: 15px 1rem;
+    }   
+
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        color: var(--fscolor);
+        background: #fff;
+        position: relative;
+        text-decoration: none;
+        border-top: 0px solid;
+        border-left: 0px solid;
+        border-right: 0px solid;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        border-bottom: 2px solid var(--fscolor) !important;
+    }
+
+    .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+        color: var(--fscolor);
+        border-top: 0px solid;
+        border-left: 0px solid;
+        border-right: 0px solid;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        border-bottom: 2px solid var(--fscolor) !important;
+        -webkit-box-shadow: 0 6px 30px -3px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 6px 30px -3px rgba(0, 0, 0, 0.1);
+    }
+
+.tab-content {
+    background: #fff;
+    border-radius: 2px;    
+}
+
+/* Table */
+.table {
+    border-collapse: collapse;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+    .table thead {
+        background-color: var(--fscolor);
+        color: #fff;        
+    }
+
+.table-sm {
+    font-size: 13px;
+}
+
+.table-lg {
+    font-size: 20px;
+}
+
+.table-hover tbody tr:hover {
+    background-color: var(--bordercolor);
+}
+
+.table-primary, .table-primary > td, .table-primary > th {
+    background-color: var(--fscolor) !important;
+    color: #fff;
+    border-color: var(--fsfocuscolor);
 }

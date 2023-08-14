@@ -1,0 +1,293 @@
+﻿@viewModel GFRGrafickyManual.ViewModels.TableViewModel, GFRGrafickyManual
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <h1>5.6 Bootstrap - Tabulky</h1>
+    <div>Tabulka zobrazuje data, která jsou strukturována do řádků a sloupců a tvoří tak tabulku. Datům zachovává čitelnost. Tabulka umožňuje přizpůsobení pomocí dalších funkcí podle potřeby uživatelů webové aplikace.</div>
+    <br />
+    <div>Základem komponenty Tabulky je prvek z Open Source knihovny <a href="https://getbootstrap.com/">Bootstrap.</a></div>
+    <div>Odkaz na prvek: <a href="https://getbootstrap.com/docs/4.6/content/tables/">https://getbootstrap.com/docs/4.6/content/tables/</a></div>
+    <br />
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Osobní číslo</th>
+                <th scope="col">Jméno</th>
+                <th scope="col">Příjmení</th>
+                <th scope="col">Funkce</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">123456</th>
+                <td>Jan</td>
+                <td>Novák</td>
+                <td>ředitel</td>
+            </tr>
+            <tr>
+                <th scope="row">123457</th>
+                <td>Petr</td>
+                <td>Novák</td>
+                <td>referent</td>
+            </tr>
+            <tr>
+                <th scope="row">123458</th>
+                <td>Miroslav</td>
+                <td>Novák</td>
+                <td>řidič</td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <h2>Nadpisy sloupců:</h2>
+    <div>Názvy sloupců by měly být jedno nebo dvou-slovné a popisují data v daném sloupci. V případech, kdy je nadpis sloupce příliš dlouhý, zobrazte přetečení formou tří teček "...". Celý text by měl být zobrazen v popisku při najetí myší. Názvy sloupců by měly používat velká a malá písmena.</div>
+    <br />
+    <h2>Velikost:</h2>
+    <div>Nastavení velikosti se provádí pomocí CSS příkazu: <code>.table-sm</code> a <code>table-lg</code>.</div>
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th scope="col">Osobní číslo</th>
+                <th scope="col">Jméno</th>
+                <th scope="col">Příjmení</th>
+                <th scope="col">Funkce</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">123456</th>
+                <td>Jan</td>
+                <td>Novák</td>
+                <td>ředitel</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-lg">
+        <thead>
+            <tr>
+                <th scope="col">Osobní číslo</th>
+                <th scope="col">Jméno</th>
+                <th scope="col">Příjmení</th>
+                <th scope="col">Funkce</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">123456</th>
+                <td>Jan</td>
+                <td>Novák</td>
+                <td>ředitel</td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <h2>Vzhled řádků:</h2>
+    <div>Sousedící řádky by měly být odlišeny pomocí "zebrování" (Striped row), tedy střídajícího se podbarvení (bílá a šedá). Jednotlivé řádky by pak již neměly mít horizontální ohraničení, které zvyšuje množství grafických prvků a zhoršuje čitelnost dat.</div>
+    <div>Nastavení "zebrování" (striped row) se provádí pomocí CSS příkazu <code>.table-striped</code>.</div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Osobní číslo</th>
+                <th scope="col">Jméno</th>
+                <th scope="col">Příjmení</th>
+                <th scope="col">Funkce</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">123456</th>
+                <td>Jan</td>
+                <td>Novák</td>
+                <td>ředitel</td>
+            </tr>
+            <tr>
+                <th scope="row">123457</th>
+                <td>Petr</td>
+                <td>Novák</td>
+                <td>referent</td>
+            </tr>
+            <tr>
+                <th scope="row">123458</th>
+                <td>Miroslav</td>
+                <td>Novák</td>
+                <td>řidič</td>
+            </tr>
+        </tbody>
+    </table>
+    <div>Přidáním CSS příkazu <code>.table-hover</code>, který umožňuje zobrazení stavu najetí na řádky tabulky v rámci <code>tbody</code>.</div>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Osobní číslo</th>
+                <th scope="col">Jméno</th>
+                <th scope="col">Příjmení</th>
+                <th scope="col">Funkce</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">123456</th>
+                <td>Jan</td>
+                <td>Novák</td>
+                <td>ředitel</td>
+            </tr>
+            <tr>
+                <th scope="row">123457</th>
+                <td>Petr</td>
+                <td>Novák</td>
+                <td>referent</td>
+            </tr>
+            <tr>
+                <th scope="row">123458</th>
+                <td>Miroslav</td>
+                <td>Novák</td>
+                <td>řidič</td>
+            </tr>
+        </tbody>
+    </table>
+    <div>Přidáním CSS příkazu <code>.table-bordered</code> pro ohraničení všech stran tabulky a buněk.</div>
+    <table class="table table-striped table-hover table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Osobní číslo</th>
+                <th scope="col">Jméno</th>
+                <th scope="col">Příjmení</th>
+                <th scope="col">Funkce</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">123456</th>
+                <td>Jan</td>
+                <td>Novák</td>
+                <td>ředitel</td>
+            </tr>
+            <tr>
+                <th scope="row">123457</th>
+                <td>Petr</td>
+                <td>Novák</td>
+                <td>referent</td>
+            </tr>
+            <tr>
+                <th scope="row">123458</th>
+                <td>Miroslav</td>
+                <td>Novák</td>
+                <td>řidič</td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <h2>Akční tlačítka:</h2>
+    <div>Součástí nadpisu sloupců je možné umístit akční tlačítka (př.: Vzestupně/Sestupně), které mohou provádět akce nad daty v tabulce.</div>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th scope="col">
+                    <div class="d-flex">
+                        <div>Osobní číslo</div>
+                        <div class="ml-auto">
+                            <i class="fa-solid fa-arrow-up-1-9"></i>
+                            <i class="fa-solid fa-arrow-down-9-1"></i>
+                        </div>
+                    </div>
+                </th>
+                <th scope="col">
+                    <div class="d-flex">
+                        <div>Jméno</div>
+                        <div class="ml-auto">
+                            <i class="fa-solid fa-arrow-up-a-z"></i>
+                            <i class="fa-solid fa-arrow-up-z-a"></i>
+                        </div>
+                    </div>
+                </th>
+                <th scope="col">
+                    <div class="d-flex">
+                        <div>Příjmení</div>
+                        <div class="ml-auto">
+                            <i class="fa-solid fa-arrow-up-a-z"></i>
+                            <i class="fa-solid fa-arrow-up-z-a"></i>
+                        </div>
+                    </div>
+                </th>
+                <th scope="col">
+                    <div class="d-flex">
+                        <div>Funkce</div>
+                        <div class="ml-auto">
+                            <i class="fa-solid fa-filter"></i>
+                        </div>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">123456</th>
+                <td>Jan</td>
+                <td>Novák</td>
+                <td>ředitel</td>
+            </tr>
+            <tr>
+                <th scope="row">123457</th>
+                <td>Petr</td>
+                <td>Novák</td>
+                <td>referent</td>
+            </tr>
+            <tr>
+                <th scope="row">123458</th>
+                <td>Miroslav</td>
+                <td>Novák</td>
+                <td>řidič</td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <h2>Zabarvení řádků či buňek:</h2>
+    <div>Pomocí CSS třídy <code>.table-active</code>, <code>.table-primary</code>, <code>.table-warning</code> atd. je možné obarvit řádky tabulky nebo buňky.</div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">CSS Třída</th>
+                <th scope="col">Hlavička</th>
+                <th scope="col">Hlavička</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table-active">
+                <th scope="row">Active</th>
+                <td>Buňka</td>
+                <td>Buňka</td>
+            </tr>
+            <tr class="table-primary">
+                <th scope="row">Primary</th>
+                <td>Buňka</td>
+                <td>Buňka</td>
+            </tr>
+            <tr class="table-warning">
+                <th scope="row">Warning</th>
+                <td>Buňka</td>
+                <td>Buňka</td>
+            </tr>
+            <tr class="table-danger">
+                <th scope="row">Danger</th>
+                <td>Buňka</td>
+                <td>Buňka</td>
+            </tr>
+            <tr class="table-success">
+                <th scope="row">Success</th>
+                <td>Buňka</td>
+                <td>Buňka</td>
+            </tr>
+            <tr class="table-info">
+                <th scope="row">Info</th>
+                <td>Buňka</td>
+                <td>Buňka</td>
+            </tr>
+            <tr>
+                <th class="table-success" scope="row">Success</th>
+                <td class="table-warning">Warning</td>
+                <td class="table-danger">Danger</td>
+            </tr>
+        </tbody>
+    </table>
+</dot:Content>
+

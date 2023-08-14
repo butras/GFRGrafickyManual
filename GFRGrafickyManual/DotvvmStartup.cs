@@ -26,6 +26,8 @@ namespace GFRGrafickyManual
             config.RouteTable.Add("Button", "Button", "Views/Button.dothtml");
             config.RouteTable.Add("RadioButton", "RadioButton", "Views/RadioButton.dothtml");
             config.RouteTable.Add("ComboBox", "ComboBox", "Views/ComboBox.dothtml");
+            config.RouteTable.Add("TabControl", "TabControl", "Views/TabControl.dothtml");
+            config.RouteTable.Add("Table", "Table", "Views/Table.dothtml");
             config.RouteTable.AutoDiscoverRoutes(new DefaultRouteStrategy(config));    
         }
 

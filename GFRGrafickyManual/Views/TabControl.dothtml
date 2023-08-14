@@ -1,0 +1,72 @@
+﻿@viewModel GFRGrafickyManual.ViewModels.TabControlViewModel, GFRGrafickyManual
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <h1>5.5 Bootstrap - Záložky</h1>
+    <div>Záložky organizují obsah do karet a udržují tím obsah ve stejném kontextu.</div>
+    <br />
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-basic-tab" data-toggle="tab" href="#nav-basic" role="tab" aria-controls="nav-basic" aria-selected="true">Základní informace</a>
+            <a class="nav-item nav-link" id="nav-advanced-tab" data-toggle="tab" href="#nav-advanced" role="tab" aria-controls="nav-advanced" aria-selected="false">Pokročilé nastavení</a>
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-basic" role="tabpanel" aria-labelledby="nav-basic-tab">
+            <br />
+            Obsah záložky základní informace.
+            <br />
+            &nbsp;
+        </div>
+        <div class="tab-pane fade" id="nav-advanced" role="tabpanel" aria-labelledby="nav-advanced-tab">
+            <br />
+            Obsah záložky pokročilé nastavení.
+            <br />
+            &nbsp;
+        </div>
+    </div>
+    <br />
+    <h2>Použití:</h2>
+    <div>Záložky umožňují navigaci mezi skupinami obsahu, které spolu souvisejí a jsou na stejné úrovni hierarchie.</div>
+    <br />
+    <h2>Text záložky:</h2>
+    <div>Každý text záložky popisuje obsah, který obsahuje. Texty jsou stručné a nepoužívají více než dvě slova. Mějte na paměti, že na mobilních zařízeních bude mít na uživatelský zážitek vliv i počet znaků textu. </div>
+    <br />
+    <h2>Počet záložek:</h2>
+    <div>Ve většině scénářů byste neměli používat více než šest záložek. Tím je zajištěno přehledné uživatelské rozhraní a snižuje kognitivní zátěž pro uživatele. Pokud je potřeba více než šesti záložek, zvažte další navigační přístupy, například boční navigaci.</div>
+    <br />
+    <h2>Pořadí záložek:</h2>
+    <div>Pořadí záložek by mělo být konzistentní napříč webovou aplikací. Záložky se souvisejícím obsahem by měly být seskupeny vedle sebe.</div>
+    <br />
+    <h2>Ikony:</h2>
+    <div>Do záložky lze použít ikonu, která představuje typ obsahu jednoduchým a rozpoznatelným způsobem. Pokud je na kartě záložky složitější obsah, je text efektivnější než ikona.</div>
+    <br />
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-basic-tab" data-toggle="tab" href="#nav-basic" role="tab" aria-controls="nav-basic" aria-selected="true">
+                <i class="fa-solid fa-sliders"></i>
+                Základní informace
+            </a>
+            <a class="nav-item nav-link" id="nav-advanced-tab" data-toggle="tab" href="#nav-advanced" role="tab" aria-controls="nav-advanced" aria-selected="false">
+                <i class="fa-solid fa-gears"></i>
+                Pokročilé nastavení
+            </a>
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-basic2" role="tabpanel" aria-labelledby="nav-basic-tab">
+            <br />
+            Obsah záložky základní informace.
+            <br />
+            &nbsp;
+        </div>
+        <div class="tab-pane fade" id="nav-advanced2" role="tabpanel" aria-labelledby="nav-advanced-tab">
+            <br />
+            Obsah záložky pokročilé nastavení.
+            <br />
+            &nbsp;
+        </div>
+    </div>
+    <br />
+</dot:Content>
+

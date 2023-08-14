@@ -27,6 +27,8 @@
                 <dot:RouteLink RouteName="Button" class="nav-item nav-link" Text="5.2 Tlačítka" />
                 <dot:RouteLink RouteName="RadioButton" class="nav-item nav-link" Text="5.3 Přepínací tlačítka" />
                 <dot:RouteLink RouteName="ComboBox" class="nav-item nav-link" Text="5.4 Rozbalovací seznam" />
+                <dot:RouteLink RouteName="TabControl" class="nav-item nav-link" Text="5.5 Záložky" />
+                <dot:RouteLink RouteName="Table" class="nav-item nav-link" Text="5.6 Tabulky" />
             </div>
         </div>
     </nav>
