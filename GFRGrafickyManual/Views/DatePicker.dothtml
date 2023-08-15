@@ -1,0 +1,68 @@
+﻿@viewModel GFRGrafickyManual.ViewModels.DatePickerViewModel, GFRGrafickyManual
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <h1>5.8 Bootstrap - Kalendář</h1>
+    <div>Kalendář umožňuje uživatelům zadat datum zadáním textu, nebo výběrem data z kalendáře.</div>
+    <br />
+    <div>Základem komponenty Kalendáře je prvek z Open Source knihovny <a href="https://uxsolutions.github.io/bootstrap-datepicker/">Bootstrap Datepicker.</a></div>
+    <div>Odkaz na prvek: <a href="https://bootstrap-datepicker.readthedocs.io/en/latest/">https://bootstrap-datepicker.readthedocs.io/en/latest/</a></div>
+    <br />
+    <div class="row justify-content-center">
+        <div class="col-3">
+            <div class="input-group date" data-provide="datepicker">
+                <input type="text" class="form-control" placeholder="Vyberte datum">
+                <div class="input-group-append">
+                    <span class="input-group-text">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2>Rozsah datumů:</h2>
+    <div>Při použití konstrukce <code>.input-daterange</code> s dvěmi input je možné vytvořit výběr rozsahu datumů.</div>
+    <br />
+    <div class="row justify-content-center">
+        <div class="col-5">
+            <div class="input-daterange input-group" id="datepicker">
+                <input type="text" class="input-sm form-control" name="start" placeholder="Vyberte začátek" />
+                <div class="input-group-append">
+                    <span class="input-group-text">
+                        <i class="fa-solid fa-calendar-week"></i>
+                    </span>
+                </div>
+                <input type="text" class="input-sm form-control" name="end" placeholder="Vyberte konec" />
+            </div>
+        </div>
+    </div>
+    <h2>Inline kalendář</h2>
+    <div>Instancováním datepickeru do jednoduchého DIV je možné zobrazit inline (embedded) kalendář</div>
+    <div class="row justify-content-center">
+        <div id="datepicker" data-date="12/03/2012"></div>
+        <input type="hidden" id="my_hidden_input">
+    </div>
+    <h2>Konfigurace pomodí <code>date-attributes</code></h2>
+    <div>Pomocí <code>date-attributes</code> je možné konfigurovat nastavení kalendáře.</div>
+    <ul>
+        <li><code>data-date-format="mm/dd/yyyy"</code> možnost nastavení formátu datumu.</li>
+        <li><code>data-date-days-of-week-disabled="0,6"</code> možnost zakázat datum o víkendu. (0 = Neděle, 1 = Pondělí, ... 6 = Sobota)</li>
+        <li><code>data-date-start-date="-5d"</code> možnost nastavení minimálního data. (-5d = minimálně 5 dní nazpět, -5m = minimálně 5 měsíců nazpět, -1y = minimálně rok nazpět)</li>
+        <li><code>data-date-end-date="+5d"</code> možnost nastavení maximálního data. (+5d = maximálně 5 dní napřed, +5m = maximálmě 5 měsíců napřed, -1y = maximálně rok napřed)</li>
+        <li><code>data-date-min-view-mode="1"</code> nastavení minimálního limitu pro režim zobrazení. (0 = dny, 1 = měsíce a roky, 2 = roky a dekády, ...)</li>
+        <li><code>data-date-max-view-mode="1"</code> nastavení maximálního limitu pro režim zobrazení. (0 = dny, 1 = měsíce a roky, 2 = roky a dekády, ...)</li>
+    </ul>
+    <div class="row justify-content-center">
+        <div class="col-3">
+            <div class="input-group date" data-provide="datepicker" data-date-days-of-week-disabled="0,6" data-date-start-date="-5d" data-date-end-date="+5d">
+                <input type="text" class="form-control" placeholder="Vyberte datum">
+                <div class="input-group-append">
+                    <span class="input-group-text">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</dot:Content>
+

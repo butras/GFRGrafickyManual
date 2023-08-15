@@ -8,7 +8,7 @@ using DotVVM.Framework.Hosting;
 
 namespace GFRGrafickyManual.ViewModels
 {
-    public class PagingViewModel : MasterPageViewModel
+    public class PaginationViewModel : MasterPageViewModel
     {
         
     }

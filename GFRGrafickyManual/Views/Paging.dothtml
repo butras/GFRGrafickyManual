@@ -1,7 +1,0 @@
-﻿@viewModel GFRGrafickyManual.ViewModels.PagingViewModel, GFRGrafickyManual
-@masterPage Views/MasterPage.dotmaster
-
-<dot:Content ContentPlaceHolderID="MainContent">
-
-</dot:Content>
-

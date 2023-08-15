@@ -10,9 +10,6 @@
     <None Remove="dotvvm_serialized_config.json.tmp" />
   </ItemGroup>
   <ItemGroup>
-    <_ContentIncludedByDefault Remove="Views\Paging.dothtml" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="DotVVM.AspNetCore" Version="4.1.7" />
     <PackageReference Include="DotVVM.Controls.Bootstrap4" Version="4.1.3" />
     <PackageReference Include="DotVVM.BusinessPack" Version="4.1.3" />

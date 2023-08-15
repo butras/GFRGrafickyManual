@@ -28,7 +28,8 @@ namespace GFRGrafickyManual
             config.RouteTable.Add("ComboBox", "ComboBox", "Views/ComboBox.dothtml");
             config.RouteTable.Add("TabControl", "TabControl", "Views/TabControl.dothtml");
             config.RouteTable.Add("Table", "Table", "Views/Table.dothtml");
-            config.RouteTable.Add("Paging", "Paging", "Views/Paging.dothtml");
+            config.RouteTable.Add("Pagination", "Pagination", "Views/Pagination.dothtml");
+            config.RouteTable.Add("DatePicker", "DatePicker", "Views/DatePicker.dothtml");
             config.RouteTable.AutoDiscoverRoutes(new DefaultRouteStrategy(config));    
         }
 
@@ -45,6 +46,11 @@ namespace GFRGrafickyManual
             config.Resources.Register("jquery", new ScriptResource
             {
                 Location = new UrlResourceLocation($"~/js/jquery.js")
+            });
+
+            config.Resources.Register("Script", new ScriptResource
+            {
+                Location = new UrlResourceLocation($"~/js/Script.js")
             });
 
             config.Resources.Register("Styles", new StylesheetResource()
