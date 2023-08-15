@@ -29,6 +29,7 @@
                 <dot:RouteLink RouteName="ComboBox" class="nav-item nav-link" Text="5.4 Rozbalovací seznam" />
                 <dot:RouteLink RouteName="TabControl" class="nav-item nav-link" Text="5.5 Záložky" />
                 <dot:RouteLink RouteName="Table" class="nav-item nav-link" Text="5.6 Tabulky" />
+                <dot:RouteLink RouteName="Paging" class="nav-item nav-link" Text="5.7 Stránkování" />
             </div>
         </div>
     </nav>

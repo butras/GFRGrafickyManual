@@ -28,6 +28,7 @@ namespace GFRGrafickyManual
             config.RouteTable.Add("ComboBox", "ComboBox", "Views/ComboBox.dothtml");
             config.RouteTable.Add("TabControl", "TabControl", "Views/TabControl.dothtml");
             config.RouteTable.Add("Table", "Table", "Views/Table.dothtml");
+            config.RouteTable.Add("Paging", "Paging", "Views/Paging.dothtml");
             config.RouteTable.AutoDiscoverRoutes(new DefaultRouteStrategy(config));    
         }
 
