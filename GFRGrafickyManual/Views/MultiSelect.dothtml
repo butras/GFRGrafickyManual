@@ -1,0 +1,69 @@
+﻿@viewModel GFRGrafickyManual.ViewModels.MultiSelectViewModel, GFRGrafickyManual
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <h1>5.9 Vícenásobný výběr</h1>
+    <div>Více násobný výběr umožňuje vybrat z nabídky možností více položek.</div>
+    <br />
+    <div>Základem komponenty Kalendáře je prvek z Open Source knihovny <a href="https://select2.org/getting-started/basic-usage">Select2.</a></div>
+    <div>Odkaz na prvek: <a href="https://select2.org/">https://select2.org/</a></div>
+    <br />
+    <!--Priklad 1 -->
+    <select class="form-control select2" name="test1">
+        <option value="1">Aš</option>
+        <option value="2">Beroun</option>
+        <option value="3">Cihelna</option>
+        <option value="4">Dašice</option>
+        <option value="5">Erste</option>
+        <option value="6">Fifa</option>
+        <option value="7">Ghost</option>
+        <option value="8">Hořice</option>
+        <option value="9">Chrudim</option>
+        <option value="10">Indie</option>
+    </select>
+    <br />
+    <select data-placeholder="Vyberte..." data-allow-clear="true" class="form-control select2">
+        <option></option>
+        <optgroup label="Skupina 1">
+            <option>
+                Hodnota 1
+            </option>
+            <option>
+                Hodnota 2
+            </option>
+        </optgroup>
+        <optgroup label="Skupina 2">
+            <option>
+                Hodnota 3
+            </option>
+            <option>
+                Hodnota 4
+            </option>
+        </optgroup>
+    </select>
+    <br />
+    <h2>Použití:</h2>
+    <div>Použíjte pokud chcete uživateli umožnit vybrat více položek ze skupiny položek.</div>
+    <br />
+    <h2>Kompozice:</h2>
+    <div>Fomulářové pole obsahuje i vyhledávání z nabízených možností.</div>
+    <ul>
+        <li><b>Vybrané položky:</b> Položky se zobrazují za sebou oddělené.</li>
+        <li><b>Nabídka:</b> Obsahuje rozbalovací seznam možností k výběru.</li>
+        <li><b>Hledání:</b> Umožňuje filtrování položek.</li>
+    </ul>
+    <!--Priklad 2 -->
+    <select class="form-control select2" name="states[]" multiple="multiple" data-placeholder="Vyberte...">
+        <option value="1">Aš</option>
+        <option value="2" disabled="disabled">Beroun (disabled)</option>
+        <option value="3">Cihelna</option>
+        <option value="4">Dašice</option>
+        <option value="5">Erste</option>
+        <option value="6">Fifa</option>
+        <option value="7">Ghost</option>
+        <option value="8">Hořice</option>
+        <option value="9">Chrudim</option>
+        <option value="10">Indie</option>
+    </select>
+    <br />
+</dot:Content>

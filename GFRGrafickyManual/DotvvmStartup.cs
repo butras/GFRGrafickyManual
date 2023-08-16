@@ -30,6 +30,7 @@ namespace GFRGrafickyManual
             config.RouteTable.Add("Table", "Table", "Views/Table.dothtml");
             config.RouteTable.Add("Pagination", "Pagination", "Views/Pagination.dothtml");
             config.RouteTable.Add("DatePicker", "DatePicker", "Views/DatePicker.dothtml");
+            config.RouteTable.Add("MultiSelect", "MultiSelect", "Views/MultiSelect.dothtml");
             config.RouteTable.AutoDiscoverRoutes(new DefaultRouteStrategy(config));    
         }
 
