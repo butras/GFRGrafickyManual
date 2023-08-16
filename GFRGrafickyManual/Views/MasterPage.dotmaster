@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css" integrity="sha512-34s5cpvaNG3BknEWSuOncX28vz97bRI59UnVtEEpFX536A7BtZSJHsDyFoCl8S7Dt2TPzcrCEoHBGeM4SUBDBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Select 2 (MultiSelect) CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-rc.0/css/select2.min.css" integrity="sha512-aD9ophpFQ61nFZP6hXYu4Q/b/USW7rpLCQLX6Bi0WJHXNO7Js/fUENpBQf/+P4NtpzNX0jSgR5zVvPOJp+W2Kg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <%-- jQuery Typeahead (AutoComplete) CSS --%>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-typeahead/2.11.2/jquery.typeahead.css" integrity="sha512-zPDjm5fHC6JUi5jEnhJetvp1zLvc1Dd5TuMFQQtqRH0KpOzrng4vHiFu2Eva+Xgu7umz0lqGHkmGjUYdeSW54w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
 
     <dot:RequiredResource Name="Styles" />
 </head>
@@ -36,6 +38,7 @@
                 <dot:RouteLink RouteName="Pagination" class="nav-item nav-link" Text="5.7 Stránkování" />
                 <dot:RouteLink RouteName="DatePicker" class="nav-item nav-link" Text="5.8 Kalendář" />
                 <dot:RouteLink RouteName="MultiSelect" class="nav-item nav-link" Text="5.9 Vícenásobný výběr" />
+                <dot:RouteLink RouteName="AutoComplete" class="nav-item nav-link" Text="5.10 Našeptávač (AutoComplete)" />
             </div>
         </div>
     </nav>
@@ -56,6 +59,9 @@
     <!-- Select2 (MultiSelect) - JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-rc.0/js/select2.min.js" integrity="sha512-4MvcHwcbqXKUHB6Lx3Zb5CEAVoE9u84qN+ZSMM6s7z8IeJriExrV3ND5zRze9mxNlABJ6k864P/Vl8m0Sd3DtQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-rc.0/js/i18n/cs.min.js" integrity="sha512-U8rWNv8+7zLrnPXdLW0CUTpjarR8OBJXEYGDZI8GVdSOyyyasTFjdjm9hvNZH+EfTFCXWn9erdCN/z85co6HtQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- jQuery Typeahead (AutoComplete) - JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-typeahead/2.11.2/jquery.typeahead.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <dot:RequiredResource Name="Script" />
 </body>

@@ -1,0 +1,20 @@
+﻿@viewModel GFRGrafickyManual.ViewModels.AutoCompleteViewModel, GFRGrafickyManual
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <h1>5.10 Bootstrap - Našeptávač (AutoComplete)</h1>
+    <div>Našeptávač (AutoComplete) umožňuje rychle vyhledávat a vybírat z předvyplněného seznamu hodnot během psaní, přičemž využívá vyhledávání a filtrování (třeba JSON API).</div>
+    <br />
+    <div>Základem komponenty Našeptávač (AutoComplete) je prvek z Open Source knihovny <a href="https://www.runningcoder.org/jquerytypeahead/">jQuery Typeahead (AutoComplete)</a></div>
+    <div>Odkaz na prvek: <a href="https://github.com/running-coder/jquery-typeahead/">https://github.com/running-coder/jquery-typeahead/</a></div>
+    <br />
+    <!-- Priklad 1 -->
+    <div class="typeahead__container">
+        <div class="typeahead__field">
+            <div class="typeahead__query">
+                <input class="js-typeahead" name="q" autocomplete="off">
+            </div>
+        </div>
+    </div>
+</dot:Content>
+
