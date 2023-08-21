@@ -39,6 +39,7 @@
                 <dot:RouteLink RouteName="DatePicker" class="nav-item nav-link" Text="5.8 Kalendář" />
                 <dot:RouteLink RouteName="MultiSelect" class="nav-item nav-link" Text="5.9 Vícenásobný výběr" />
                 <dot:RouteLink RouteName="AutoComplete" class="nav-item nav-link" Text="5.10 Našeptávač (AutoComplete)" />
+                <dot:RouteLink RouteName="InputGroup" class="nav-item nav-link" Text="5.11 Seskupení ovladacích prvků (InputGroup)" />
             </div>
         </div>
     </nav>

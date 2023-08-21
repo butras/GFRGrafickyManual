@@ -1,0 +1,134 @@
+﻿@viewModel GFRGrafickyManual.ViewModels.InputGroupViewModel, GFRGrafickyManual
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <h1>Seskupení ovladácích prvků (InputGroup)</h1>
+    <div>Seskupení ovladácích prvků (InputGroup) je komponenta, která slouží k seskupení ovladacích prvků do jedné logické skupiny. Seskupení ovladacích prvků je možné využít například pro seskupení ovladacích prvků pro vyhledávání, kde je možné seskupit textové pole pro vyhledávání a tlačítko pro spuštění vyhledávání.</div>
+    <!-- Priklad 1 -->
+    <br />
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">@</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Uživatelské jméno" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    <br />
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="E-mailová adresa" aria-label="E-Mail" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon2">@example.com</span>
+        </div>
+    </div>
+    <br />
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Měna</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Hodnota" aria-label="E-Mail" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon2">Kč</span>
+        </div>
+    </div>
+    <br />
+    <h2>Velikost:</h2>
+    <div>Nastavení velkosti se provádí pomocí CSS příkazů: <code>.input-group-sm</code> a <code>.input-group-lg</code>.</div>
+    <br />
+    <!-- Priklad 2 -->
+    <div class="input-group input-group-sm">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Malá velikost</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <br />
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Standartní velikost</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <br />
+    <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-lg">Velká velikost</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <br />
+    <h2>Přepínací tlačítka</h2>
+    <div>Součástí seskupení může být i zaškrtávacího políčka nebo přepínací tlačítka.</div>
+    <br />
+    <!-- Priklad 3 -->
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <div class="input-group-text form-check">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Hodnota
+                    </label>
+                </div>
+            </div>
+        </div>
+        <input type="text" class="form-control" aria-label="Text input with checkbox">
+    </div>
+    <br />
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                        Hodnota
+                    </label>
+                </div>
+            </div>
+        </div>
+        <input type="text" class="form-control" aria-label="Text input with radio button">
+    </div>
+    <br />
+    <h2>Více vstupů:</h2>
+    <div>Součástí seskupení mohou být u dva a více <code>input</code>.</div>
+    <br />
+    <!-- Priklad 4 -->
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="">Příjmení a jméno</span>
+        </div>
+        <input type="text" class="form-control">
+        <input type="text" class="form-control">
+    </div>
+    <br />
+    <h2>Tlačítka:</h2>
+    <div>Součástí seskupení mohou být i tlačítka.</div>
+    <br />
+    <!-- Priklad 5 -->
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <button class="btn btn-outline-success" type="button">Tlačítko</button>
+        </div>
+        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+    </div>
+    <br />
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+            <button class="btn btn-warning" type="button">Tlačítko</button>
+        </div>
+    </div>
+    <br />
+    <h2>Nahrání souborů:</h2>
+    <div>Příklad komponenry pro nahrání souborů. Umožňuje uživateli vybrat soubory z operačního systému.</div>
+    <!-- Priklad 6 -->
+    <div class="input-group">
+        <div class="custom-file">
+            <input type="file" class="custom-file-input" id="inputGroupFile02">
+            <label class="custom-file-label" for="inputGroupFile02">Nevybrán žádný soubor</label>
+        </div>
+        <div class="input-group-append">
+            <span class="input-group-text" id="">Nahrát</span>
+        </div>
+    </div>
+    <br />
+</dot:Content>
+
