@@ -1,0 +1,240 @@
+﻿@viewModel GFRGrafickyManual.ViewModels.ModalViewModel, GFRGrafickyManual
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <h1>5.12 Bootstrap - Modální okno</h1>
+    <div>
+        Modální okno na rozdíl od naprosté většiny Bootstrap komponent spouštět v praxi spíše JavaScriptem. V ukázce je modální okno otevřený pomocí elementu <code>button</code> s data atributem <code>data-toggle="modal"</code>. Pomocí atributu <code>data-target</code> uvedeme selektor na modálním okne, dojde k otevření pomocí tlačítka.
+    </div>
+    <br />
+    <div>Základem komponenty Modální okno je prvek z Open Source knihovny <a href="https://getbootstrap.com/">Bootstrap.</a></div>
+    <div>Odkaz na prvek: <a href="https://getbootstrap.com/docs/4.6/components/modal/">https://getbootstrap.com/docs/4.6/components/modal/</a></div>
+    <br />
+    <!-- Priklad 1 -->
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+        Zobrazit modální okno
+    </button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title" id="exampleModalLabel">Název</div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div>Text</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Zavřít</button>
+                    <button type="button" class="btn btn-success">Uložit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <h2>Velikost:</h2>
+    <div>Modální dialogy mají tři volitelné velikosti, které jsou k dispozici prostřednictvím tříd modifikátorů umístěných na .modal-dialog. Tyto velikosti se zapínají v určitých zlomových bodech, aby se zabránilo horizontálním posuvníkům na užších viewportech.</div>
+    <br />
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Velikost</th>
+                <th>CSS Třída</th>
+                <th>Modal max-width (maximální šířka)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Small</td>
+                <td><code>.modal-sm</code></td>
+                <td><code>300px</code></td>
+            </tr>
+            <tr>
+                <td>Default</td>
+                <td class="text-muted">None</td>
+                <td><code>500px</code></td>
+            </tr>
+            <tr>
+                <td>Large</td>
+                <td><code>.modal-lg</code></td>
+                <td><code>800px</code></td>
+            </tr>
+            <tr>
+                <td>Extra large</td>
+                <td><code>.modal-xl</code></td>
+                <td><code>1140px</code></td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <!-- Priklad 2 -->
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalExtraLarge">
+        Zobrazit extra velké
+    </button>
+    <div class="modal fade" id="exampleModalExtraLarge" tabindex="-1" aria-labelledby="exampleModalExtraLarge" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title" id="exampleModalLabel">Extra velké modální okno</div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div>Text</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Zavřít</button>
+                    <button type="button" class="btn btn-success">Uložit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalLarge">
+        Zobrazit velké
+    </button>
+    <div class="modal fade" id="exampleModalLarge" tabindex="-1" aria-labelledby="exampleModalLarge" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title" id="exampleModalLabel">Velké modální okno</div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div>Text</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Zavřít</button>
+                    <button type="button" class="btn btn-success">Uložit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalSmall">
+        Zobrazit malé
+    </button>
+    <div class="modal fade" id="exampleModalSmall" tabindex="-1" aria-labelledby="exampleModalSmall" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title" id="exampleModalLabel">Malé modální okno</div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div>Text</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Zavřít</button>
+                    <button type="button" class="btn btn-success">Uložit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <h2>Svislé vycentrování:</h2>
+    <div>Přidání CSS třídy <code>.modal-dialog-centered</code> k <code>.modal-dialog</code> dojde k vycentrování modálního dialogu na střed obrazovky.</div>
+    <br />
+    <!-- Priklad 3 -->
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalVericalCenter">
+        Zobrazit vycentrované
+    </button>
+    <div class="modal fade" id="exampleModalVericalCenter" tabindex="-1" aria-labelledby="exampleModalVericalCenter" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title" id="exampleModalLabel">Vycentrované modální okno</div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div>Text</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Zavřít</button>
+                    <button type="button" class="btn btn-success">Uložit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <h2>Posouvání dlouhého obsahu</h2>
+    <div>Pokud jsou modální okna příliš dlouhá pro zobrazení uživatele nebo jeho zařízení, posouvají se nezávisle na samotné stránce. K <code>.modal-dialog</code> stačí jen přidat CSS třídu <code>.modal-dialog-scrollable</code>.</div>
+    <br />
+    <!-- Priklad 4 -->
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalNotScroll">
+        Zobrazit standartní scrolování
+    </button>
+    <div class="modal fade" id="exampleModalNotScroll" tabindex="-1" aria-labelledby="exampleModalNotScroll" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title" id="exampleModalLabel">Standartní scrolování</div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Zkrátka široko daleko nikde nic, jen zelenkavá tráva, jasně modrá obloha a tři křiklavě barevné pouťové balónky, které se téměř nepozorovatelně pohupují ani ne moc vysoko, ani moc nízko nad zemí. Kdyby pod balónky nebyla sytě zelenkavá tráva, ale třeba suchá silnice či beton, možná by bylo vidět jejich barevné stíny - to jak přes poloprůsvitné barevné balónky prochází ostré sluneční paprsky. Jenže kvůli všudy přítomné trávě jsou stíny balónků sotva vidět, natož aby šlo rozeznat, jakou barvu tyto stíny mají. Uvidět tak balónky náhodný kolemjdoucí, jistě by si pomyslel, že už tu takhle poletují snad tisíc let. Stále si víceméně drží výšku a ani do stran se příliš nepohybují. Proti slunci to vypadá, že se slunce pohybuje k západu rychleji než balónky, a možná to tak skutečně je. Nejeden filozof by mohl tvrdit, že balónky se sluncem závodí, ale fyzikové by to jistě vyvrátili. Z fyzikálního pohledu totiž balónky působí zcela nezajímavě.
+                    </p>
+                    <p>
+                        Nejvíc bezpochyby zaujmou děti - jedna malá holčička zrovna včera div nebrečela, že by snad balónky mohly prasknout. A co teprve ta stuha. Stuha, kterou je každý z trojice balónků uvázán, aby se nevypustil. Očividně je uvázaná dostatečně pevně, protože balónky skutečně neucházejí. To ale není nic zvláštního. Překvapit by však mohl fakt, že nikdo, snad krom toho, kdo balónky k obloze vypustil, netuší, jakou má ona stuha barvu. Je totiž tak lesklá, že za světla se v ní odráží nebe a za tmy zase není vidět vůbec.
+                    </p>
+                    <p>
+                        Očividně je uvázaná dostatečně pevně, protože balónky skutečně neucházejí. To ale není nic zvláštního. Překvapit by však mohl fakt, že nikdo, snad krom toho, kdo balónky k obloze vypustil, netuší, jakou má ona stuha barvu. Je totiž tak lesklá, že za světla se v ní odráží nebe a za tmy zase není vidět vůbec. Když svítí slunce tak silně jako nyní, tak se stuha třpytí jako kapka rosy a jen málokdo vydrží dívat se na ni přímo déle než pár chvil. Jak vlastně vypadají ony balónky?. Ptají se často lidé. Inu jak by vypadaly - jako běžné pouťové balónky střední velikosti, tak akorát nafouknuté. Červený se vedle modrého a zeleného zdá trochu menší, ale to je nejspíš jen optický klam, a i kdyby byl skutečně o něco málo menší, tak vážně jen o trošičku. Vítr skoro nefouká a tak by se na první pohled mohlo zdát, že se balónky snad vůbec nepohybují.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Zavřít</button>
+                    <button type="button" class="btn btn-success">Uložit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalScroll">
+        Zobrazit scrolování v modálním okně
+    </button>
+    <div class="modal fade" id="exampleModalScroll" tabindex="-1" aria-labelledby="exampleModalScroll" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title" id="exampleModalLabel">Scrolování v modálním okně</div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Zkrátka široko daleko nikde nic, jen zelenkavá tráva, jasně modrá obloha a tři křiklavě barevné pouťové balónky, které se téměř nepozorovatelně pohupují ani ne moc vysoko, ani moc nízko nad zemí. Kdyby pod balónky nebyla sytě zelenkavá tráva, ale třeba suchá silnice či beton, možná by bylo vidět jejich barevné stíny - to jak přes poloprůsvitné barevné balónky prochází ostré sluneční paprsky. Jenže kvůli všudy přítomné trávě jsou stíny balónků sotva vidět, natož aby šlo rozeznat, jakou barvu tyto stíny mají. Uvidět tak balónky náhodný kolemjdoucí, jistě by si pomyslel, že už tu takhle poletují snad tisíc let. Stále si víceméně drží výšku a ani do stran se příliš nepohybují. Proti slunci to vypadá, že se slunce pohybuje k západu rychleji než balónky, a možná to tak skutečně je. Nejeden filozof by mohl tvrdit, že balónky se sluncem závodí, ale fyzikové by to jistě vyvrátili. Z fyzikálního pohledu totiž balónky působí zcela nezajímavě.
+                    </p>
+                    <p>
+                        Nejvíc bezpochyby zaujmou děti - jedna malá holčička zrovna včera div nebrečela, že by snad balónky mohly prasknout. A co teprve ta stuha. Stuha, kterou je každý z trojice balónků uvázán, aby se nevypustil. Očividně je uvázaná dostatečně pevně, protože balónky skutečně neucházejí. To ale není nic zvláštního. Překvapit by však mohl fakt, že nikdo, snad krom toho, kdo balónky k obloze vypustil, netuší, jakou má ona stuha barvu. Je totiž tak lesklá, že za světla se v ní odráží nebe a za tmy zase není vidět vůbec.
+                    </p>
+                    <p>
+                        Očividně je uvázaná dostatečně pevně, protože balónky skutečně neucházejí. To ale není nic zvláštního. Překvapit by však mohl fakt, že nikdo, snad krom toho, kdo balónky k obloze vypustil, netuší, jakou má ona stuha barvu. Je totiž tak lesklá, že za světla se v ní odráží nebe a za tmy zase není vidět vůbec. Když svítí slunce tak silně jako nyní, tak se stuha třpytí jako kapka rosy a jen málokdo vydrží dívat se na ni přímo déle než pár chvil. Jak vlastně vypadají ony balónky?. Ptají se často lidé. Inu jak by vypadaly - jako běžné pouťové balónky střední velikosti, tak akorát nafouknuté. Červený se vedle modrého a zeleného zdá trochu menší, ale to je nejspíš jen optický klam, a i kdyby byl skutečně o něco málo menší, tak vážně jen o trošičku. Vítr skoro nefouká a tak by se na první pohled mohlo zdát, že se balónky snad vůbec nepohybují.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Zavřít</button>
+                    <button type="button" class="btn btn-success">Uložit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+</dot:Content>
+

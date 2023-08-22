@@ -33,6 +33,7 @@ namespace GFRGrafickyManual
             config.RouteTable.Add("MultiSelect", "MultiSelect", "Views/MultiSelect.dothtml");
             config.RouteTable.Add("AutoComplete", "AutoComplete", "Views/AutoComplete.dothtml");
             config.RouteTable.Add("InputGroup", "InputGroup", "Views/InputGroup.dothtml");
+            config.RouteTable.Add("Modal", "Modal", "Views/Modal.dothtml");
             config.RouteTable.AutoDiscoverRoutes(new DefaultRouteStrategy(config));    
         }
 

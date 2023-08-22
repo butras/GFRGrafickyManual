@@ -822,3 +822,19 @@ form.was-validated select:valid ~ .select2-container--bootstrap4 .select2-select
 .typeahead__list .typeahead__item > a, .typeahead__dropdown .typeahead__dropdown-item > a {    
     padding: 0.5rem 1.00rem;    
 }
+
+/* Modal */
+.modal-content {    
+     border-radius: 2px;     
+}
+
+.modal-header {
+    background-color: var(--fscolor);
+    color: #fff;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;    
+}
+
+    .modal-header .close {
+        color: #fff;        
+    }
