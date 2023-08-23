@@ -25,7 +25,7 @@
     <dot:RequiredResource Name="Styles" />
 </head>
 <body>
-    <nav class="navbar navbar-expand navbar-light bg-light">
+    <nav class="navbar navbar-expand">
         <a class="navbar-brand" href="#">GFŘ Grafický vzhled</a>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
@@ -41,6 +41,7 @@
                 <dot:RouteLink RouteName="AutoComplete" class="nav-item nav-link" Text="5.10 Našeptávač (AutoComplete)" />
                 <dot:RouteLink RouteName="InputGroup" class="nav-item nav-link" Text="5.11 Seskupení ovladacích prvků (InputGroup)" />
                 <dot:RouteLink RouteName="Modal" class="nav-item nav-link" Text="5.12 Modální okno" />
+                <dot:RouteLink RouteName="NavBar" class="nav-item nav-link" Text="5.13 Navigační panel" />
             </div>
         </div>
     </nav>

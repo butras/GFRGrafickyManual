@@ -1,0 +1,125 @@
+﻿@viewModel GFRGrafickyManual.ViewModels.NavBarViewModel, GFRGrafickyManual
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <h1>5.13 Bootstrap - Navigační panel (NavBar)</h1>
+    <div>
+        Navigační panel (Navbar) je jedna z nejdůležitějších Bootstrap komponent a zároveň součást většiny layoutů. Jedná se o responzivní navigační lištu, která může obsahovat nejrůznější elementy a na mobilních zařízeních
+        se "smrskne" do podoby tlačítka, otevírajícího svislé menu. Kromě navigace často lišty obsahují také logo, formuláře (např. pro vyhledávání na stránce), texty a tlačítka zobrazující další obsah.
+    </div>
+    <br />
+    <div>Základem komponenty Navigačního panelu (NavBar) je prvek z Open Source knihovny <a href="https://getbootstrap.com/">Bootstrap.</a></div>
+    <div>Odkaz na prvek: <a href="https://getbootstrap.com/docs/4.6/components/navbar/">https://getbootstrap.com/docs/4.6/components/navbar/</a></div>
+    <br />
+    <!-- Priklad 1 -->
+    <nav class="navbar navbar-expand">
+        <a class="navbar-brand" href="#">
+            <img src="https://www.financnisprava.cz/assets/img/logo.svg" width="40" height="40" alt="">
+            <span>Název</span>
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ml-1">
+                    <a class="nav-link active" href="#">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Aktivní s ICO</span>
+                    </a>
+                </li>
+                <li class="nav-item ml-1">
+                    <a class="nav-link" href="#">
+                        <i class="fa-solid fa-cog"></i>
+                        <span>Neaktivní s ICO</span>
+                    </a>
+                </li>
+                <li class="nav-item ml-1">
+                    <a class="nav-link active" href="#">
+                        Aktivní bez ICO
+                    </a>
+                </li>
+                <li class="nav-item ml-1">
+                    <a class="nav-link" href="#">
+                        Neaktivní bez ICO
+                    </a>
+                </li>
+                <li class="nav-item ml-1">
+                    <a class="nav-link disabled" href="#">
+                        Disabled
+                    </a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                <i class="fa-solid fa-user"></i>
+                Uživatel
+            </span>
+        </div>
+    </nav>
+    <br />
+    <h2>Navigační panel včetně podmenu:</h2>
+    <!-- Priklad 2 -->
+    <nav class="navbar navbar-expand">
+        <a class="navbar-brand" href="#">Název</a>        
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Aktivní s ICO</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Podmenu bez ICO
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Podmenu 1</a>
+                        <a class="dropdown-item" href="#">Podmenu 2</a>
+                        <a class="dropdown-item" href="#">Podmenu 3</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-cog"></i>
+                        <span>Podmenu s ICO</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Podmenu 1</a>
+                        <a class="dropdown-item" href="#">Podmenu 2</a>
+                        <a class="dropdown-item" href="#">Podmenu 3</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br />
+    <h2>Pozicování:</h2>
+    <div>K pozicování navigační lišty je možné použít CSS třídy viz níže.</div>
+    <ul>
+        <li><b>Fixní pozice</b>, kdy navigační lišta neroluje se stránkou, ale zůstává na pevné pozici. Toto chování je možné dosáhnout pomocí CSS třídy <code>.fixed-top</code> nebo <code>.fixed-bottom</code>.</li>
+        <li><b>Sticky pozice</b>, kdy navigační lišta se chová jako klasický element, ale jakmile začnete scrollovat, přichytí se jako by byla její pozice fixní. Výhodou je, že takto můžeme do navigačního panelu umístit velké loga, které se poté odscrolluje, zatímco navigační panel se k horní části obrazovky přilepí. Pro toto nastavení je možné použít CSS třídu <code>.sticky-top</code>.</li>
+    </ul>
+    <h2>Navigační panel včetně formuláře:</h2>
+    <!-- Priklad 3 -->
+    <nav class="navbar">
+        <a class="navbar-brand">Název</a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Hledat" aria-label="Hledat">
+            <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Hledat</button>
+        </form>
+    </nav>
+    <br />
+    <nav class="navbar">
+        <a class="navbar-brand">Název</a>
+        <form class="form-inline">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Uživatel" aria-label="Uzivatel" aria-describedby="basic-addon1">
+            </div>
+        </form>
+    </nav>
+
+
+</dot:Content>
+

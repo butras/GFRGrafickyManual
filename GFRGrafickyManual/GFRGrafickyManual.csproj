@@ -13,6 +13,9 @@
     <None Remove="dotvvm_serialized_config.json.tmp" />
   </ItemGroup>
   <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\NavBar.dothtml" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="bundleconfig.json" />
   </ItemGroup>
   <ItemGroup>
