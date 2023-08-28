@@ -1,0 +1,27 @@
+﻿@viewModel GFRGrafickyManual.ViewModels.TooltipViewModel, GFRGrafickyManual
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <h1>5.14 Bootstrap - Tooltip</h1>
+    <div>
+        Tooltips jsou malé informační bubliny, které se zobrazí při podržení kurzoru myši nad určitým elementem. Typicky obsahují dodatečné vysvětlení nějakého pojmu nebo nápovědu jak s elementem pracovat. Jedná se v podstatě o hezčí podobu informace vkládané do HTML atributu title kteréhokoli elementu. Ta se v prohlížeči ve výchozím        nastavení zobrazí až po chvíli setrvání kurzoru nad daným elementem. Tooltip vypadá o něco graficky lépe a zobrazí se ihned. Z důvodu podobnosti s title obsah tooltipu zapisujeme také do tohoto atributu a navíc uvádíme data atribut.
+    </div>
+    <br />
+    <div>Základem komponenty Tooltip je prvek z Open Source knihovny <a href="https://getbootstrap.com/">Bootstrap.</a></div>
+    <div>Odkaz na prvek: <a href="https://getbootstrap.com/docs/4.6/components/tooltips/">https://getbootstrap.com/docs/4.6/components/tooltips/</a></div>
+    <br />
+    <!-- Priklad 1 -->
+    <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="top" title="Tooltip se zobrazuje nahože">
+        Tooltip nahoře
+    </button>
+    <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="right" title="Tooltip se zobrazuje vpravo">
+        Tooltip vpravo
+    </button>
+    <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="bottom" title="Tooltip se zobrazuje dole">
+        Tooltip dole
+    </button>
+    <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="left" title="Tooltip se zobrazuje vlevo">
+        Tooltip vlevo
+    </button>
+</dot:Content>
+

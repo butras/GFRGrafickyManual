@@ -1,0 +1,8 @@
+﻿@viewModel GFRGrafickyManual.ViewModels.LoaderViewModel, GFRGrafickyManual
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <h1>5.15 Boostrap - Loader (Načítání)</h1>
+    <div>Loader (Načítání stránky) se používá při přenosu dat mezi serverem a klientem. Uživatel je tak upozorněn, že dochází k načítání dat.</div>
+</dot:Content>
+

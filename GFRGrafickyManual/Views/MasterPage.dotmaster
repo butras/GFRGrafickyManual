@@ -42,6 +42,9 @@
                 <dot:RouteLink RouteName="InputGroup" class="nav-item nav-link" Text="5.11 Seskupení ovladacích prvků (InputGroup)" />
                 <dot:RouteLink RouteName="Modal" class="nav-item nav-link" Text="5.12 Modální okno" />
                 <dot:RouteLink RouteName="NavBar" class="nav-item nav-link" Text="5.13 Navigační panel" />
+                <dot:RouteLink RouteName="Tooltip" class="nav-item nav-link" Text="5.14 Tooltip" />
+                <dot:RouteLink RouteName="Loader" class="nav-item nav-link" Text="5.15 Loader (Načítání)" />
+                <dot:RouteLink RouteName="Alert" class="nav-item nav-link" Text="5.16 Upozornění (Alerts)" />
             </div>
         </div>
     </nav>

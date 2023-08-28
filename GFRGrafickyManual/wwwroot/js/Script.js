@@ -166,3 +166,8 @@ typeof $.typeahead === 'function' && $.typeahead({
     },
     debug: true
 });
+
+/* Tooltip */
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+});

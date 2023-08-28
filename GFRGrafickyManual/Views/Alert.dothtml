@@ -1,0 +1,60 @@
+﻿@viewModel GFRGrafickyManual.ViewModels.AlertViewModel, GFRGrafickyManual
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <h1>5.16 Bootstrap - Upozornění (Alerts)</h1>
+    <div>Upozornění (Alerts) jsou základním stavebním kamenem pro komunikaci s uživatelem. Jsou to jednoduché zprávy, které se zobrazují v horní části stránky. Můžeme je použít například pro zobrazení chybové hlášky, nebo pro potvrzení provedení akce.</div>
+    <br />
+    <div>Základem komponenty Upozornění (Alerts) je prvek z Open Source knihovny <a href="https://getbootstrap.com/">Bootstrap.</a></div>
+    <div>Odkaz na prvek: <a href="https://getbootstrap.com/docs/4.6/components/alerts/">https://getbootstrap.com/docs/4.6/components/alerts/</a></div>
+    <br />
+    <!-- Priklad 1 -->
+    <div class="alert alert-primary" role="alert">
+        Jednoduché primární upozornění – podívejte se na to!
+    </div>
+    <div class="alert alert-secondary" role="alert">
+        Jednoduché sekundární upozornění – podívejte se na to!
+    </div>
+    <div class="alert alert-success" role="alert">
+        Jednoduché upozornění na úspěch – podívejte se na to!
+    </div>
+    <div class="alert alert-danger" role="alert">
+        Jednoduché upozornění na nebezpečí – podívejte se na to!
+    </div>
+    <div class="alert alert-warning" role="alert">
+        Jednoduché varovné upozornění – podívejte se na to!
+    </div>
+    <div class="alert alert-info" role="alert">
+        Jednoduché informační upozornění – podívejte se na to!
+    </div>
+    <div class="alert alert-light" role="alert">
+        Jednoduché světelné upozornění – podívejte se na to!
+    </div>
+    <div class="alert alert-dark" role="alert">
+        Jednoduché upozornění na tmu – podívejte se na to!
+    </div>
+    <br />
+    <h2>Další obsah:</h2>
+    <div>Upozornění (Alerts) mohou obsahovat i obsahlejší informace.</div>
+    <br />
+    <!-- Priklad 2 -->
+    <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Upozornění!</h4>
+        <p>Červený se vedle modrého a zeleného zdá trochu menší, ale to je nejspíš jen optický klam, a i kdyby byl skutečně o něco málo menší, tak vážně jen o trošičku. Vítr skoro nefouká a tak by se na první pohled mohlo zdát, že se balónky snad vůbec nepohybují.</p>
+        <hr>
+        <p class="mb-0">
+            Jenže kvůli všudy přítomné trávě jsou stíny balónků sotva vidět, natož aby šlo rozeznat, jakou barvu tyto stíny mají.
+        </p>
+    </div>
+    <br />
+    <h2>Zrušení:</h2>
+    <div>Upozornění (Alerts) můžeme zrušit pomocí křížku.</div>
+    <!-- Priklad 3 -->
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Upozornění!</strong> Zobrazení chyby včetně odkazu <a href="#" class="alert-link">Další informace</a>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+</dot:Content>
+
