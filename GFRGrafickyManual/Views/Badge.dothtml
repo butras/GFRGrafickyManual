@@ -1,0 +1,29 @@
+﻿@viewModel GFRGrafickyManual.ViewModels.BadgeViewModel, GFRGrafickyManual
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <h1>5.13 Bootstrap - Oznaky (Badge)</h1>
+    <div>
+        Oznaky jsou malé prvky, které mohou být přidány do jiných prvků, jako jsou tlačítka, záložky a další.
+        Oznaky jsou vytvořeny pomocí <code>.badge</code> třídy, která je součástí Bootstrapu.
+    </div>
+    <br />
+    <div>Základem komponenty Oznaky (Badge) je prvek z Open Source knihovny <a href="https://getbootstrap.com/">Bootstrap.</a></div>
+    <div>Odkaz na prvek: <a href="https://getbootstrap.com/docs/4.6/components/badge/">https://getbootstrap.com/docs/4.6/components/badge/</a></div>
+    <br />
+    <!-- Priklad 1 -->
+    <h1>Text <span class="badge badge-success">Success</span></h1>
+    <h2>Text <span class="badge badge-warning">Warning</span></h2>
+    <h3>Text <span class="badge badge-danger">Danger</span></h3>
+    <h4>Text <span class="badge badge-info">Info</span></h4>
+    <h5>Text <span class="badge badge-dark">Dark</span></h5>
+    <h5>Text <span class="badge badge-primary">Primary</span></h5>
+    <h6>Text <span class="badge badge-secondary">Secondary</span></h6>
+    <br />
+    <h2>Součástí tlačítka:</h2>
+    <!-- Priklad 2 -->
+    <button type="button" class="btn btn-success">
+        Odeslat <span class="badge badge-light">4</span>
+    </button>
+</dot:Content>
+

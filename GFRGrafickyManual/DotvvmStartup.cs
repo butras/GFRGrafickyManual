@@ -37,6 +37,7 @@ namespace GFRGrafickyManual
             config.RouteTable.Add("NavBar", "NavBar", "Views/NavBar.dothtml");
             config.RouteTable.Add("Loader", "Loader", "Views/Loader.dothtml");
             config.RouteTable.Add("Alert", "Alert", "Views/Alert.dothtml");
+            config.RouteTable.Add("Badge", "Badge", "Views/Badge.dothtml");
             config.RouteTable.AutoDiscoverRoutes(new DefaultRouteStrategy(config));    
         }
 

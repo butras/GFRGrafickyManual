@@ -1,4 +1,10 @@
-﻿@import '../fonts/open-sans/open-sans.css';
+﻿/*
+Customizing Bootstrap for FS v1.0.0.0
+Based on: Bootstrap v4.6 (https://getbootstrap.com/)
+Autor: Ondrej Bock (ondrej.bock@fs.mfcr.cz
+*/
+
+@import '../fonts/open-sans/open-sans.css';
 @import '../fonts/web-icons/web-icons.css';
 
 :root {
@@ -1056,3 +1062,13 @@ form.was-validated select:valid ~ .select2-container--bootstrap4 .select2-select
     .alert-success hr {
         border-top-color: var(--bordercolor);
     }
+
+/* Badge */
+.badge {
+    border-radius: 2px;    
+}
+
+.badge-success {
+    color: #fff;
+    background-color: var(--fscolor);
+}

@@ -45,6 +45,7 @@
                 <dot:RouteLink RouteName="Tooltip" class="nav-item nav-link" Text="5.14 Tooltip" />
                 <dot:RouteLink RouteName="Loader" class="nav-item nav-link" Text="5.15 Loader (Načítání)" />
                 <dot:RouteLink RouteName="Alert" class="nav-item nav-link" Text="5.16 Upozornění (Alerts)" />
+                <dot:RouteLink RouteName="Badge"  class="nav-item nav-link" Text="5.13 Oznaky (Badge)" />
             </div>
         </div>
     </nav>
