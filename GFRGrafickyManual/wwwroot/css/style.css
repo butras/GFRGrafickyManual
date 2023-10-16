@@ -964,7 +964,7 @@ form.was-validated select:valid ~ .select2-container--bootstrap4 .select2-select
     width: 100px;
     height: 100px;
     margin-top: -0.5em;
-    border: 15px solid var(--appcolor);
+    border: 15px solid var(--fscolor);
     border-radius: 100%;
     border-bottom-color: transparent;
     -webkit-animation: spinner 1s linear 0s infinite;

@@ -22,6 +22,6 @@
     </button>
     <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="left" title="Tooltip se zobrazuje vlevo">
         Tooltip vlevo
-    </button>
+    </button>    
 </dot:Content>
 
